@@ -1,0 +1,6 @@
+Next Step
+
+1. Make the whole back ground fit most of the page
+2. Review Generative Art Practice
+3. Create a Gallery page
+4. Create psychedilic backgrounds with CSS

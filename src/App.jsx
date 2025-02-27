@@ -1,0 +1,34 @@
+// eslint-disable-next-line no-unused-vars
+import { useState } from 'react'
+import Home from "./pages/home/Home";
+import AboutUs from './pages/about/About';
+import Artists from './pages/artists/Artists';
+//import Events from './pages/events/Events';
+import Albums from './pages/albums/Albums';
+import Tickets from './pages/tickets/Tickets';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import './App.css'
+
+function App() {
+
+  return (
+    <>
+      <div>
+      <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/artists" element={<Artists />} />
+        <Route path="/gallery" element={<Albums/>} />
+        <Route path="/tickets" element={<Tickets/>} />
+        {/*Merch section goes here */}
+      </Routes>
+    </Router>
+      </div>
+    </>
+  )
+}
+
+export default App

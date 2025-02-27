@@ -1,0 +1,11 @@
+.background {
+    color: red;
+    background-color: blue;
+    z-index: -2;
+    height:80vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

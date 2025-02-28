@@ -9,6 +9,7 @@ import Tickets from './pages/tickets/Tickets';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         {/*Merch section goes here */}
       </Routes>
     </Router>
+    <Footer></Footer>
       </div>
     </>
   )

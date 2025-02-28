@@ -1,18 +1,17 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import './Background.css'
-
+import poster from '../../assets/poster_23_11_24.jpg'
 const Background = () => {
+  //TODO: when Make background responsive
     return (
-      <div>
-        
+      
         <div className="background">
-          This is a background
+         <img src={poster} width="1440" height="1440"></img>
         </div>
-        <div className="clouds cloud1"></div>
-        <div className="mountains mountain1"></div>
         
-      </div>
+        
+     
     );
   };
   

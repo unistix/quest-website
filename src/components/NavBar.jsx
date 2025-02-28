@@ -54,9 +54,9 @@ const styles = {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        background: "#333",
         color: "white",
-        zIndex: 1000, // Ensures navbar stays above content
+        zIndex: 1000,
+         // Ensures navbar stays above content
     },
     logo: {
         fontSize: "24px",

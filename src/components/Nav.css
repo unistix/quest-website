@@ -1,0 +1,77 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+    
+}
+
+.logo {
+    font-size: 24px;
+    padding-left: 20px;
+    
+}
+
+.menuIcon {
+    display: none; /* Default to not display */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media query to handle mobile display */
+@media (max-width: 424px) {
+    .menuIcon {
+        display: block;
+    }
+
+    .navLinks {
+        display: none;
+    }
+}
+
+/* For desktop and larger devices */
+@media (min-width: 425px) {
+    .navLinks {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        padding-right: 20px;
+    }
+    
+}
+
+.dropdownMenu {
+   
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    
+    padding: 10px 0;
+    text-align: center;
+    background-color: #111;
+}
+
+/* A class to toggle visibility of the dropdown menu */
+.showDropdown {
+    display: block;
+}
+
+.dropdownItem {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}

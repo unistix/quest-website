@@ -1,7 +1,39 @@
-.background{
-    z-index: -1;
-    background-color: red;
+/* External CSS or <style> tag inside your React component */
+
+.main{
+   
+    height: 150vh; /* Sets the height to 150% of the viewport height */
+    width: 75vw; /* Sets the width to 75% of the viewport width */
+    margin-top: 30px;
+    margin-bottom:50px;
+    /* margin-left: -100px; Uncomment if needed */
 }
-main{
-    z-index: 1;
+.countdown{
+  
+  font-size: 5rem;
+  color: white;
+  
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  font-weight: bold;
+
 }
+
+
+  @media (max-width: 480px ) {
+    .main {
+      
+       /*Image is 1x1 square just put the count down above and call it*/
+      /* Adjust other properties if necessary */
+    }
+
+    
+  }
+
+  @media (min-width: 2000px) {
+    .main {
+      margin-left: -300px;
+      /* Adjust other properties if necessary */
+    }
+
+    
+  }

@@ -16,8 +16,10 @@ function App() {
   return (
     <>
       <div>
+        
       <Router>
       <NavBar />
+      <div className='main'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
@@ -26,9 +28,11 @@ function App() {
         <Route path="/tickets" element={<Tickets/>} />
         {/*Merch section goes here */}
       </Routes>
+      </div>
     </Router>
     <Footer></Footer>
       </div>
+     
     </>
   )
 }

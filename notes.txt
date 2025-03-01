@@ -1,10 +1,8 @@
 Next Step
 
-1. Make the whole back ground fit most of the page
-    a. set background class div
-    b. set image name with inline CSS
-    b. set size of background class div to be size of image
-    c. put main inside of background
-2. Review Generative Art Practice
-3. Create a Gallery page
-4. Create psychedilic backgrounds with CSS
+1. Make Gallery Responsive
+2. Make home page Responsive
+3. Pad home page
+4. Countdown 
+5. Shroomies
+6. Deploy

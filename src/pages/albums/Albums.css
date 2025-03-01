@@ -1,0 +1,12 @@
+.poster-container{
+  display: flex;          /* This makes it a flex container */
+  justify-content: center; /* This centers the child divs horizontally */
+  align-items: center;     /* This aligns the child divs vertically */
+}
+    
+    
+.poster{
+    margin: 10px;
+    display: flex;          /* Establishes this div as a flex container */
+    flex-direction: column; /* Stacks the flex items vertically */
+}

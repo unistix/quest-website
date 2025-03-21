@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import './Home.css';
 
 const Home = () => {
@@ -47,10 +47,10 @@ const Home = () => {
           <>
             <table>
               <tr className="top-row">
-                <td> {pad(timeLeft.days)} :&nbsp;</td>
-                <td>{pad(timeLeft.hours)} :&nbsp;</td>
-                <td>{pad(timeLeft.minutes)} :&nbsp;</td>
-                <td>{pad(timeLeft.seconds)} &nbsp;</td>
+                <td> {pad(timeLeft.days)} </td>
+                <td>{pad(timeLeft.hours)}</td>
+                <td>{pad(timeLeft.minutes)}</td>
+                <td>{pad(timeLeft.seconds)}</td>
               </tr>
               <tr>
                 <th>DAYS</th>

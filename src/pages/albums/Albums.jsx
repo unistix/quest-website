@@ -7,11 +7,12 @@ import './Albums.css'
 
 const Albums = () => {
   return (
-    <div>
-      <h1>Welcome to the Gallery Page!</h1>
-      <br></br>
-      <div>
+    <div className="main-gallery">
+      
+      
+        <h1>Gallery</h1>
       <div className="poster-container">
+        
       <div className="poster">
       <a href="https://www.instagram.com/join_the_quest/" target="_blank">
         <img src={poster} alt="Album 1" width="250px" height="250px"/>
@@ -34,7 +35,7 @@ const Albums = () => {
           </a>
           11/06/2024
           </div>
-        </div>
+       
       
 
       </div>

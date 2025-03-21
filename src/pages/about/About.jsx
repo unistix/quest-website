@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div className="main-text">
       <h1>About Us</h1>
-      <p>Welcome to Join The Quest, London's leading platform for immersive psychedelic experiences, 
+      <p>Welcome to Join The Quest, London&apos;s leading platform for immersive psychedelic experiences, 
         where the pulse of techno, psy-techno, and trance animates the spirit of our exclusive gatherings.
          </p>
          <h2>Our Vision</h2>

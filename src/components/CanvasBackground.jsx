@@ -15,8 +15,11 @@ const CanvasBackground = () => {
     canvas.height = window.innerHeight;
 
     let particles = [];
-    let numberOfParticles = (canvas.width * canvas.height) / 50000;
-
+    
+    const isMobile = window.innerWidth < 768;
+    let numberOfParticles = isMobile 
+      ? (canvas.width * canvas.height) / 15000
+      : (canvas.width * canvas.height) / 50000;
     class Particle {
       constructor(x, y, directionX, directionY, size) {
         this.x = x;
@@ -28,6 +31,7 @@ const CanvasBackground = () => {
         this.rotationDirection = Math.random() < 0.5 ? -0.01 : 0.01;
         this.image = new Image();
         this.image.src = "/mushroom.png";
+        this.glow = 10
       }
 
       draw() {
@@ -38,6 +42,9 @@ const CanvasBackground = () => {
         ctx.rotate(this.rotation);
         ctx.drawImage(this.image, -this.size * 2, -this.size * 2, this.size * 4, this.size * 4);
         ctx.restore();
+        ctx.shadowColor = "red";
+        ctx.shadowBlur = this.glow; //10-40
+
       }
 
       update() {
@@ -68,9 +75,20 @@ const CanvasBackground = () => {
           }
         }
 
+        //shadow blur increase for glow effect
+       
+        if(this.glow==10){
+            this.glow+=5
+        }
+        if(this.glow==50){
+            this.glow-=5
+        }
+
         this.x += this.directionX;
         this.y += this.directionY;
         this.rotation += this.rotationDirection;
+
+        
 
         this.draw();
       }
@@ -79,7 +97,7 @@ const CanvasBackground = () => {
     const init = () => {
       particles = [];
       for (let i = 0; i < numberOfParticles; i++) {
-        const size = 15;//size depends on screen size
+        const size = isMobile ? 10 : 15;
         const x = Math.random() * (canvas.width - size * 4);
         const y = Math.random() * (canvas.height - size * 4);
         const directionX = (Math.random() - 0.5) * 4;

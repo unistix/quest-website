@@ -17,7 +17,7 @@
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
   font-weight: bold;
   background-color: rgba(0,0,0,0.25);
-  padding:20px;
+  padding:75px;
 
   
 
@@ -42,33 +42,38 @@ th, td {
 .countdown td{
   font-size: 8rem;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .countdown th{
-  text-align: left;
-  padding-left:15px;
+  text-align: center;
+  
   font-size:1.5rem;
  
 }
 
 
 
-
-  @media (max-width: 480px ) {
-    .main {
-      
-       /*Image is 1x1 square just put the count down above and call it*/
-      /* Adjust other properties if necessary */
-    }
+/* Media query to handle mobile display */
+@media (max-width: 424px) {
+  .countdown{
+    margin-top: 100px;
+    padding: 10px 5px;
+  }
+  .countdown td{
+    font-size: 1.5rem;
+   
+  }
+  
+  .countdown th{
+   
+   
+    font-size:0.5rem;
+   
+  }
+}
+  
 
     
-  }
-
-  @media (min-width: 2000px) {
-    .main {
-      margin-left: -300px;
-      /* Adjust other properties if necessary */
-    }
-
-    
-  }
+  

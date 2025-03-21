@@ -1,7 +1,7 @@
 const Footer = () => {
   var year = new Date().getFullYear()
     return (
-      <div style={styles.footer}>
+      <div style={{color:"#333"}}>
       
         Copyright &copy; {year} Xertz industries.
       </div>
@@ -10,17 +10,4 @@ const Footer = () => {
   
   export default Footer;
 
-  const styles = {
-    footer: {
-      
-      
-      width: '100%',
-      textAlign: 'center',
-      marginTop: '30px',
-      
-     
-      
-      color: '#333',  // Directly apply the text color to the footer for simplicity
-     
-    }
-  };
+ 

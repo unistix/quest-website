@@ -49,7 +49,7 @@
 }
 
 /* For desktop and larger devices */
-@media (min-width: 425px) {
+@media (min-width: 700px) {
     .navLinks {
         list-style: none;
         display: flex;

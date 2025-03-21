@@ -56,13 +56,13 @@ th, td {
 
 
 /* Media query to handle mobile display */
-@media (max-width: 424px) {
+@media (max-width: 425px) {
   .countdown{
     margin-top: 100px;
     padding: 10px 5px;
   }
   .countdown td{
-    font-size: 3rem;
+    font-size: 2.5rem;
    
   }
   

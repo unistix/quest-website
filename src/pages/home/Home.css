@@ -40,7 +40,7 @@ th, td {
 
 
 .countdown td{
-  font-size: 8rem;
+  font-size: 10rem;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -62,14 +62,14 @@ th, td {
     padding: 10px 5px;
   }
   .countdown td{
-    font-size: 1.5rem;
+    font-size: 3rem;
    
   }
   
   .countdown th{
    
    
-    font-size:0.5rem;
+    font-size:1rem;
    
   }
 }

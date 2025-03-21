@@ -22,8 +22,10 @@
 
 .menuIcon {
     display: none; /* Default to not display */
-    font-size: 24px;
+    font-size: 48px;
     cursor: pointer;
+    padding: 40px 20px 10px 20px;
+    background-color: rgba(0,0,0,0.9);
 }
 
 /* Media query to handle mobile display */
@@ -36,7 +38,13 @@
         display: none;
     }
     .nav{
-        background-color: rgba(0,0,0,0.90);
+        background-color: rgba(0,0,0,0);
+       
+       
+
+    }
+    .logo {
+        display:none;
     }
 }
 
@@ -50,12 +58,13 @@
        
     }
     
+    
 }
 
 .dropdownMenu {
    
     position: absolute;
-    top: 35px;
+    top: 70px;
     left: 0;
     width: 100%;
     
@@ -75,12 +84,11 @@
     color: white;
     text-decoration: none;
     background-color: rgba(0,0,0,0.25);
+    font-size: 2rem;
     
 }
 
-.dropdownItem:hover {
-    background-color: black;
-}
+
 
 .link {
     color: white;

@@ -25,10 +25,10 @@ const NavBar = () => {
             </ul>
             {isOpen && (
                 <div className="dropdownMenu">
-                    <Link to="/" className="dropdownItem" onClick={toggleMenu}>Home</Link>
-                    <Link to="/about-us" className="dropdownItem" onClick={toggleMenu}>About</Link>
-                    <Link to="/gallery" className="dropdownItem" onClick={toggleMenu}>Gallery</Link>
-                    <Link to="https://eventhorizontickets.co.uk/event/quest-2/" target="_blank" className="dropdownItem" onClick={toggleMenu}>Tickets</Link>
+                    <Link style={{backgroundColor:"black", width:'80%', margin:"10px auto"}} to="/" className="dropdownItem" onClick={toggleMenu}>Home</Link>
+                    <Link style={{backgroundColor:"black", width:'80%', margin:"10px auto"}}to="/about-us" className="dropdownItem" onClick={toggleMenu}>About</Link>
+                    <Link style={{backgroundColor:"black", width:'80%', margin:"10px auto"}}to="/gallery" className="dropdownItem" onClick={toggleMenu}>Gallery</Link>
+                    <Link style={{backgroundColor:"black", width:'80%', margin:"10px auto"}}to="https://eventhorizontickets.co.uk/event/quest-2/" target="_blank" className="dropdownItem" onClick={toggleMenu}>Tickets</Link>
                 </div>
             )}
         </nav>

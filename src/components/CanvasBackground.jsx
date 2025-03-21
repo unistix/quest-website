@@ -31,7 +31,7 @@ const CanvasBackground = () => {
         this.rotationDirection = Math.random() < 0.5 ? -0.01 : 0.01;
         this.image = new Image();
         this.image.src = "/mushroom.png";
-        this.glow = 10
+        this.glow = 5
       }
 
       draw() {
@@ -75,13 +75,15 @@ const CanvasBackground = () => {
           }
         }
 
+        //Finger collision
+
         //shadow blur increase for glow effect
        
-        if(this.glow==10){
-            this.glow+=5
+        if(this.glow==5){
+            this.glow+=10
         }
-        if(this.glow==50){
-            this.glow-=5
+        if(this.glow==60){
+            this.glow-=10
         }
 
         this.x += this.directionX;
@@ -97,7 +99,7 @@ const CanvasBackground = () => {
     const init = () => {
       particles = [];
       for (let i = 0; i < numberOfParticles; i++) {
-        const size = isMobile ? 10 : 15;
+        const size = isMobile ? 15 : 20;
         const x = Math.random() * (canvas.width - size * 4);
         const y = Math.random() * (canvas.height - size * 4);
         const directionX = (Math.random() - 0.5) * 4;

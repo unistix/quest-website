@@ -9,12 +9,14 @@
     align-items: center;
     color: white;
     z-index: 1000;
+    height: 40px; /* Reduced height */
     
 }
 
 .logo {
     font-size: 24px;
     padding-left: 20px;
+    padding-top: 10px;
     
 }
 
@@ -42,6 +44,7 @@
         display: flex;
         gap: 15px;
         padding-right: 20px;
+       
     }
     
 }

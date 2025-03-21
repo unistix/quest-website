@@ -2,21 +2,56 @@
 
 .main{
    
-    height: 150vh; /* Sets the height to 150% of the viewport height */
-    width: 75vw; /* Sets the width to 75% of the viewport width */
+    /*height: 150vh; /* Sets the height to 150% of the viewport height 
+    width: 75vw; /* Sets the width to 75% of the viewport width 
     margin-top: 30px;
     margin-bottom:50px;
     /* margin-left: -100px; Uncomment if needed */
 }
 .countdown{
   
-  font-size: 5rem;
+ 
   color: white;
+  margin-top: 150px;
   
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
   font-weight: bold;
+  background-color: rgba(0,0,0,0.25);
+  padding:20px;
+
+  
 
 }
+table {
+ 
+  border-collapse: collapse; /* Removes spacing between cells */
+  table-layout: fixed; /* Forces equal column width */
+}
+
+th, td {
+ 
+ 
+  line-height: 1; /* Reduces the height of text blocks */
+  word-wrap: break-word; /* Wrap long words */
+  overflow-wrap: break-word;
+  white-space: normal; /* Allow wrapping */
+}
+
+
+
+.countdown td{
+  font-size: 8rem;
+  text-align: center;
+}
+
+.countdown th{
+  text-align: left;
+  padding-left:15px;
+  font-size:1.5rem;
+ 
+}
+
+
 
 
   @media (max-width: 480px ) {

@@ -1,7 +1,9 @@
 const Footer = () => {
+  var year = new Date().getFullYear()
     return (
       <div style={styles.footer}>
-        <p>Xertz industries 2025</p>
+      
+        Copyright &copy; {year} Xertz industries.
       </div>
     );
   };

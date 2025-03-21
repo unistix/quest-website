@@ -10,31 +10,30 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import './App.css'
 import Footer from './components/Footer'
+import CanvasBackground from './components/CanvasBackground'; // <-- Import your background
 
 function App() {
 
   return (
     <>
-      <div>
-        
-      <Router>
-      <NavBar />
-      <div className='main'>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/artists" element={<Artists />} />
-        <Route path="/gallery" element={<Albums/>} />
-        <Route path="/tickets" element={<Tickets/>} />
-        {/*Merch section goes here */}
-      </Routes>
+      <CanvasBackground />
+      <div className="app-wrapper" style={{ position: 'relative', zIndex: 1 }}>
+        <Router>
+          <NavBar />
+          <div className="main">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/artists" element={<Artists />} />
+              <Route path="/gallery" element={<Albums />} />
+              <Route path="/tickets" element={<Tickets />} />
+            </Routes>
+          </div>
+        </Router>
+        <Footer />
       </div>
-    </Router>
-    <Footer></Footer>
-      </div>
-     
     </>
-  )
+  );
 }
 
 export default App
